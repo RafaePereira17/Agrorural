@@ -1,0 +1,362 @@
+/* =============================================
+   Galinheiro Feliz - Estilos Principais
+   Autor: Estudante
+   ============================================= */
+
+/* ----------- Variáveis de cor ----------- */
+:root {
+  --cor-primaria: #c0392b;
+  --cor-primaria-escura: #922b21;
+  --cor-fundo: #ffffff;
+  --cor-clara: #fdf5f5;
+  --cor-borda: #f0dada;
+  --cor-texto: #333;
+  --cor-texto-claro: #666;
+}
+
+/* ----------- Reset e base ----------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
+/* ----------- Navbar ----------- */
+.navbar-custom {
+  background-color: var(--cor-primaria);
+}
+
+.navbar-custom .navbar-brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.navbar-custom .nav-link {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.navbar-custom .dropdown-menu {
+  background-color: var(--cor-primaria-escura);
+  border: none;
+}
+
+.navbar-custom .dropdown-item {
+  color: #fff;
+}
+
+.navbar-custom .dropdown-item:hover {
+  background-color: var(--cor-primaria);
+  color: #fff;
+}
+
+.navbar-custom .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.navbar-custom .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* ----------- Hero ----------- */
+.hero-section {
+  background-color: var(--cor-primaria);
+  padding: 70px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-section h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.hero-section p {
+  font-size: 1rem;
+  margin-top: 12px;
+  opacity: 0.9;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-section .btn-hero {
+  background-color: #fff;
+  color: var(--cor-primaria);
+  border: none;
+  padding: 10px 28px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 6px;
+  margin-top: 22px;
+  display: inline-block;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.hero-section .btn-hero:hover {
+  background-color: var(--cor-primaria-escura);
+  color: #fff;
+}
+
+/* ----------- Seção de Cards ----------- */
+.secao-cards {
+  padding: 50px 0;
+  background-color: var(--cor-clara);
+}
+
+.secao-cards h2 {
+  text-align: center;
+  font-weight: 700;
+  color: var(--cor-primaria);
+  margin-bottom: 35px;
+  font-size: 1.6rem;
+}
+
+.card-galinha {
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-color: #fff;
+}
+
+.card-galinha:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-galinha .card-img-top {
+  border-radius: 8px 8px 0 0;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-galinha .card-title {
+  color: var(--cor-primaria);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.card-galinha .card-text {
+  font-size: 0.9rem;
+  color: var(--cor-texto-claro);
+}
+
+/* ----------- Carousel ----------- */
+.carousel-section {
+  padding: 50px 0;
+  background-color: #fff;
+  border-top: 1px solid var(--cor-borda);
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.carousel-section h2 {
+  text-align: center;
+  font-weight: 700;
+  color: var(--cor-primaria);
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+}
+
+.carousel-img {
+  height: 380px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(0);
+  background-color: var(--cor-primaria);
+  border-radius: 50%;
+  padding: 18px;
+}
+
+/* ----------- Seção Flex ----------- */
+.secao-flex {
+  padding: 50px 0;
+  background-color: var(--cor-clara);
+}
+
+.secao-flex h2 {
+  text-align: center;
+  font-weight: 700;
+  color: var(--cor-primaria);
+  margin-bottom: 35px;
+  font-size: 1.6rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.flex-item {
+  background-color: #fff;
+  border: 1px solid var(--cor-borda);
+  border-top: 3px solid var(--cor-primaria);
+  border-radius: 8px;
+  padding: 22px 18px;
+  flex: 1 1 180px;
+  max-width: 220px;
+  text-align: center;
+}
+
+.flex-item .icone {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.flex-item h5 {
+  color: var(--cor-primaria);
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.flex-item p {
+  font-size: 0.85rem;
+  color: var(--cor-texto-claro);
+  margin-top: 4px;
+}
+
+/* ----------- Botão padrão ----------- */
+.btn-primario {
+  background-color: var(--cor-primaria);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 18px;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.btn-primario:hover {
+  background-color: var(--cor-primaria-escura);
+  color: #fff;
+}
+
+/* ----------- Footer ----------- */
+footer {
+  background-color: var(--cor-primaria);
+  color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+  padding: 24px 0;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ----------- Página Raças ----------- */
+.pagina-racas {
+  padding: 50px 0;
+}
+
+.pagina-racas h1 {
+  text-align: center;
+  color: var(--cor-primaria);
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 1.9rem;
+}
+
+.raca-card {
+  border-left: 4px solid var(--cor-primaria);
+  background-color: #fff;
+  border-radius: 0 8px 8px 0;
+  padding: 18px 20px;
+  margin-bottom: 16px;
+  border-top: 1px solid var(--cor-borda);
+  border-right: 1px solid var(--cor-borda);
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.raca-card h4 {
+  color: var(--cor-primaria);
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.raca-card p {
+  font-size: 0.9rem;
+  color: var(--cor-texto-claro);
+}
+
+.raca-card .badge {
+  font-size: 0.75rem;
+}
+
+.raca-card img {
+  height: 90px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* ----------- Página Dicas ----------- */
+.pagina-dicas {
+  padding: 50px 0;
+}
+
+.pagina-dicas h1 {
+  text-align: center;
+  color: var(--cor-primaria);
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 1.9rem;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--cor-clara);
+  color: var(--cor-primaria);
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: var(--cor-borda);
+}
+
+/* ----------- Responsividade ----------- */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 1.7rem;
+  }
+
+  .carousel-img {
+    height: 200px;
+  }
+
+  .flex-item {
+    max-width: 100%;
+  }
+
+  .raca-card img {
+    height: 140px;
+    margin-bottom: 12px;
+  }
+}
